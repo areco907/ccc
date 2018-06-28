@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{messages.title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <form 
+    text-center 
+    (ngSubmit)="login()">
+    <ion-item>
+      <ion-label color="primary">{{messages.username}}</ion-label>
+      <ion-input type="text" [(ngModel)]="data.username" name="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">{{messages.password}}</ion-label>
+      <ion-input type="password" [(ngModel)]="data.password" name="password"></ion-input>
+    </ion-item>
+    <button 
+      ion-button
+      margin
+      id="loginBtn"
+      type="submit">
+      {{messages.buttontext}}
+    </button>
+    <button 
+      ion-button
+      margin
+      id="showModalBtn"
+      color="custom_color"
+      type="button"
+      (click)="showModalExample()">
+      {{messages.exampleModal}}
+    </button>
+  </form>
+</ion-content>

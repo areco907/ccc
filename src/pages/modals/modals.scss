@@ -1,0 +1,17 @@
+page-modals {
+  .iconCircle {
+    background-color: color($colors, custom_color);
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 0.4em 0.65em;    
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    ion-icon {
+      color: #fff;
+      font-size: 1.5em;
+    }
+  }
+}

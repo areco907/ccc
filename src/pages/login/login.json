@@ -1,0 +1,9 @@
+{
+  "login": {
+    "title":"Login",
+    "username":"Usuario",
+    "password":"Contraseña",
+    "buttontext":"Iniciar sesión",
+    "exampleModal":"Mostrar modal"
+  }
+}
