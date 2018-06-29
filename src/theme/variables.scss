@@ -4,7 +4,8 @@
 // Font path is used to include ionicons,
 // roboto, and noto sans fonts
 $font-path: "../assets/fonts";
-
+$font-ptSerif: "PT Serif";
+$font-roboto: "Roboto";
 
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
@@ -39,9 +40,18 @@ $colors: (
   danger:       #f53d3d,
   light:        #f4f4f4,
   dark:         #222,
-  custom_color: #00A7EB
+  custom_color: #00A7EB,
+  ccc_white: #ffffff,
+  ccc_vinotinto: #56272D,
+  ccc_abano: #E5E0DA,
+  ccc_dark_gray: #333333,
 );
 
+// Font sizes
+// --------------------------------------------------
+
+$font-size-title: 2.2rem;
+$font-size-text: 1.4rem;
 
 // App iOS Variables
 // --------------------------------------------------
@@ -71,6 +81,7 @@ $colors: (
 // so that the above variables are used and Ionic's
 // default are overridden.
 
+@import "./utilities/ionic.own.scss";
 @import "ionic.theme.default";
 
 
@@ -85,5 +96,7 @@ $colors: (
 // Fonts
 // --------------------------------------------------
 
+@import "settings/ptSerif";
+@import "settings/roboto";
 @import "roboto";
 @import "noto-sans";

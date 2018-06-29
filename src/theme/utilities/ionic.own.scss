@@ -1,0 +1,44 @@
+/*
+*	ion-header
+*/
+ion-header {
+  background: transparent;
+}
+
+.toolbar-background{
+	&-md,
+	&-ios{
+		border: none ;
+		background: transparent !important;
+		color: white;
+	}
+	
+}
+
+.toolbar-title{
+	&-md,
+	&-ios{
+		color: white !important;
+	}
+}
+
+.bar-button-default{
+	&-md,
+	&-ios{
+		color: white !important;
+	}
+}
+
+.header{
+	&-md::after,
+	&-ios::after{
+		background-image: none !important;
+	}
+}
+
+.toolbar{
+	&-md,
+	&-ios{
+		padding: 0 !important;
+	}
+}

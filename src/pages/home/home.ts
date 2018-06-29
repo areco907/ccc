@@ -14,7 +14,14 @@ import { HomeServiceProvider } from "../../providers/home-service/home-service";
 })
 export class HomePage {
   
-  horses: any[] = [];
+  /* horses: any[] = [{
+    foto: "assets/images/caballo.jpg",
+    nombre: "Tronador de villa juliana",
+    padre: "Fragante",
+    madre: "Campirana del Ocho"
+  }]; */
+
+  private horses: any;
 
   activeMenu: string;
 
@@ -44,11 +51,6 @@ export class HomePage {
     this.activeMenu = 'menu1';
     this.menuCtrl.enable(true, 'menu1');
     this.menuCtrl.enable(false, 'menu2');
-  }
-  menu2Active() {
-    this.activeMenu = 'menu2';
-    this.menuCtrl.enable(false, 'menu1');
-    this.menuCtrl.enable(true, 'menu2');
   }
 
   ionViewDidLoad(){

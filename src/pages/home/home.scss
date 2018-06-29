@@ -3,8 +3,55 @@ page-home {
         background-image: url(../assets/images/fondo.jpg);
         background-size: 100%;
 
-        .imageHorse{
-            width:100%
+        .horse-card{
+            background-color: color($colors, ccc_abano);
+            border-radius: 10px;
+            margin: 25px 0;
+
+            .horse-info{
+                display: flex;
+                flex-direction: column;
+
+                .horse-name{
+                    display: flex;
+                    justify-content: center;
+                    color: color($colors, ccc_vinotinto);
+                    font-size: $font-size-title;
+                    font-family: $font-ptSerif;
+                    padding: 0 15px;
+                    text-align: center;
+                }
+
+                .horse-family{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    color: color($colors, ccc_dark_gray);
+                    font-size: $font-size-text;
+                    font-family: $font-roboto;
+                    padding: 0 10%; 
+                    
+                    ion-icon{
+                        font-size: 4rem;
+                    }
+
+                    div:first-child{
+                        text-align: right;
+                    }
+
+                    div:last-child{
+                        text-align: left;
+                    }
+                    .horse-parent{
+                        width:49%;
+                        padding: 0 10px;
+                    }
+                }
+            }
+            .imageHorse{
+                width:100%
+            }
         }
+        
     }
 }

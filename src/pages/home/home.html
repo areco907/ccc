@@ -9,21 +9,25 @@
 
 <ion-content padding>
 
-	<ion-card *ngFor="let horse of horses">
+	<div class="horse-card" *ngFor="let horse of horses">
 		<div class="imageHorse">
 			<img [src]="messages.imgPath + horse.foto" />
-		</div> 
-		<ion-card-content>
-			<ion-card-title>
+			<!-- <img [src]="horse.foto" /> -->
+		</div>
+		<div class="horse-info">
+			<div class="horse-name">
 				{{horse.nombre}}
-			</ion-card-title>
-			<p>
-				{{horse.padre}} x {{horse.madre}}
-			</p>
-		</ion-card-content>
-	</ion-card>
-
-
-
+			</div>
+			<div class="horse-family">
+				<div class="horse-parent">
+					<p>{{horse.padre}}</p>
+				</div>
+				<ion-icon name="close"></ion-icon>
+				<div class="horse-parent">
+					<p>{{horse.madre}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </ion-content>

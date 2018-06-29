@@ -1,0 +1,8 @@
+$futuraStd-font-path: $font-path !default;
+
+@font-face {
+    font-family: $font-ptSerif;
+    src: url('#{$futuraStd-font-path}/PTSerif/PTSerif-Regular.ttf');  
+    font-weight: normal;
+    font-style: normal;
+}

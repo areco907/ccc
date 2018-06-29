@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="co.com.pragma.bmm" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:mfp="http://www.ibm.com/mobilefirst/cordova-plugin-mfp">
-    <name>App</name>
+<widget id="com.basculasjaramillo.ccc" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:mfp="http://www.ibm.com/mobilefirst/cordova-plugin-mfp">
+    <name>CCC</name>
     <description>Arquetipo Ionic 3 Pragma.</description>
     <author email="Pragma" href="http://ionicframework.com/">Pragma Team</author>
     <content src="index.html" />
