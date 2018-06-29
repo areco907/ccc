@@ -18,6 +18,8 @@ export class MyApp {
    */
   public rootPage: any;
 
+  pages: Array<{title: string, component: any}>;
+
   constructor(
     public platform: Platform,
     public statusBar: StatusBar,
@@ -26,6 +28,12 @@ export class MyApp {
   ) 
   {
     this.initializeApp();
+    // used for an example of ngFor and navigation
+    this.pages = [
+      { title: 'Mis favoritos', component: '' },
+      { title: 'Criaderos', component: '' },
+      { title: 'Resultados ferias', component: '' }
+    ];
   }
 
   initializeApp() {

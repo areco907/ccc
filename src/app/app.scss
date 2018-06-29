@@ -14,3 +14,51 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+ion-menu{
+    ion-header{
+        background-color: color($colors, ccc_cafe) !important;
+        .header-menu{
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .avatar{
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                overflow: hidden;
+                position: absolute;
+                bottom: -30px;
+                left: 10px;
+            }
+            p{
+                font-family: $font-ptSerif;
+                color: color($colors, ccc_abano);
+                font-size: $font-size-subtitle;
+                margin-right: 20px;
+            } 
+        }
+        
+    }
+}
+    
+
+ion-content{
+    background-color: color($colors, ccc_abano) !important;
+    .menu-list{
+        margin-top: 50px;
+        .item{
+            &-md,
+            &-ios{
+                font-size: $font-size-subtitle;
+                color: color($colors, ccc_dark_gray);
+                font-size: $font-size-text;
+                background: transparent !important;
+            }
+        }
+    }
+
+
+}
