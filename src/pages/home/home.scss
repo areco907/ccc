@@ -4,7 +4,7 @@ page-home {
         background-size: 100%;
 
         .horse-card{
-            background-color: color($colors, ccc_abano);
+            background-color: color($colors, ccc_white);
             border-radius: 10px;
             margin: 25px 0;
 
@@ -29,27 +29,32 @@ page-home {
                     color: color($colors, ccc_dark_gray);
                     font-size: $font-size-text;
                     font-family: $font-roboto;
-                    padding: 0 10%; 
                     
                     ion-icon{
-                        font-size: 4rem;
+                        //font-size: 4rem;
+                        font-size: $font-size-title;
+                        font-family: $font-ptSerif;
                     }
-
+                    
                     div:first-child{
+                        padding: 0 20px 0 5px;
                         text-align: right;
                     }
 
                     div:last-child{
+                        padding: 0 5px 0 20px;
                         text-align: left;
                     }
                     .horse-parent{
                         width:49%;
-                        padding: 0 10px;
                     }
                 }
             }
             .imageHorse{
-                width:100%
+                width: 100%;
+                height: 270px;
+                background-position: center !important;
+                background-size: cover !important;
             }
         }
         

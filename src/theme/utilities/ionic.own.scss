@@ -10,9 +10,16 @@ ion-header {
 	&-ios{
 		border: none ;
 		background: transparent !important;
-		color: white;
+		color: color($colors, ccc_white) !important;
 	}
 	
+}
+
+.button{
+	&-md,
+	&-ios{
+		color: color($colors, ccc_dark_gray) !important;
+	}
 }
 
 .menu-inner{
@@ -22,14 +29,14 @@ ion-header {
 .toolbar-title{
 	&-md,
 	&-ios{
-		color: white !important;
+		color: color($colors, ccc_white) !important;
 	}
 }
 
 .bar-button-default{
 	&-md,
 	&-ios{
-		color: white !important;
+		color: color($colors, ccc_white) !important;
 	}
 }
 

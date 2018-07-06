@@ -55,7 +55,7 @@ export class MyApp {
    */
   private getMessages(): void {
     this.jsonProvider.getMessages().subscribe(() => {
-      this.rootPage = HomePage;
+      this.rootPage = LoginPage;
     });
   }
 }

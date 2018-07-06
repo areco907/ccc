@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { JsonProvider } from '../../commons/providers/json.provider';
-import { AuthenticationService } from '../../bussines-model/services/authentication.service';
 import { MenuController } from 'ionic-angular';
 
 import { HomeServiceProvider } from "../../providers/home-service/home-service";
@@ -34,17 +33,12 @@ export class HomePage {
     public navCtrl: NavController, 
     public navParams: NavParams,
     private jsonProvider: JsonProvider,
-    private authenticationService: AuthenticationService,
     public menuCtrl: MenuController,
     public homeService: HomeServiceProvider
   )
   {
     this.messages = this.jsonProvider.messages.home;
     this.menu1Active();
-  }
-
-  private logOut(): void{
-    this.authenticationService.logout();
   }
 
   menu1Active() {

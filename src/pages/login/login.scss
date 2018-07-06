@@ -1,3 +1,62 @@
 page-login {
+    .fullscreen-bg {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -100;
+        opacity: .5;
+    }
+    
+    .fullscreen-bg__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 
+    .logo{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 20%;
+
+        img{
+            width:60%;
+        }
+    }
+    
+    .bottom-button-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 50px;
+        bottom: 20px;
+        position: absolute;
+        width: 100%;
+
+        .btn-main-button {
+            height: 50px;
+            margin: 0 auto;
+            text-transform: none;
+            font-family: $font-ptSerif;
+            font-weight: normal;
+            font-size: $font-size-subtitle;
+            border-radius: 64px;
+            box-shadow: none;
+            background: color($colors, ccc_white);
+        }
+
+        p{
+            font-family: $font-ptSerif;
+            font-weight: normal;
+            font-size: $font-size-subtitle;
+            color: color($colors, ccc_white);
+            margin: 30px auto;  
+        }
+        
+    }
 }

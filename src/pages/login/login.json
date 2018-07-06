@@ -4,6 +4,8 @@
     "username":"Usuario",
     "password":"Contraseña",
     "buttontext":"Iniciar sesión",
-    "exampleModal":"Mostrar modal"
+    "exampleModal":"Mostrar modal",
+    "bottomBtn": "Iniciar Sesión",
+    "createAccount": "Crear Cuenta"
   }
 }
