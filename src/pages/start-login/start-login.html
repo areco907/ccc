@@ -1,0 +1,32 @@
+<ion-header hideBackButton="true">
+
+	<ion-navbar hideBackButton="true">
+		<div class="header-title">
+			<p>{{messages.title}}</p>
+		</div>
+		
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<div>
+		<ion-item>
+			<ion-input type="email" [placeholder]="messages.username" [(ngModel)]="user"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-input type="password" [placeholder]="messages.password" [(ngModel)]="password"></ion-input>
+		</ion-item>
+	</div>
+	<div class="container-action">
+		<div class="container-action-buttons">
+			<button ion-button class="btn-main-button cancelButton" (click)="goBack()" >{{messages.cancelBtn}}</button>
+			<button ion-button class="btn-main-button loginButton" (click)="verifyLogin()" >{{messages.title}}</button>
+		</div>
+		<div class="container-action-link">
+			<p (click)="goForgotPassword()">{{messages.forgotPassword}}</p>
+		</div>
+	</div>
+
+</ion-content>

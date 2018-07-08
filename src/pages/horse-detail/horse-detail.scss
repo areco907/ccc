@@ -1,0 +1,30 @@
+page-horse-detail {
+    ion-content{
+        background: url(../assets/images/fondo.jpg) 0 -390px no-repeat;
+        background-size: 100%;
+
+
+        .swiper-pagination{
+            display: block !important;
+
+            .swiper-pagination-bullet-active{
+                background-color: color($colors, ccc_vinotinto);
+            }
+        }
+
+        .swiper-container{
+            height: 330px !important;
+        }
+        
+        .imageHorse{
+            width: 100%;
+            height: 300px; 
+            background-position: center !important;
+            background-size: cover !important;
+            border-bottom: 3px solid color($colors, ccc_vinotinto);
+            position: absolute;
+            top: 0;
+        }
+    }
+        
+}

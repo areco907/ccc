@@ -1,0 +1,13 @@
+{
+    "startLogin": {
+        "title": "Iniciar Sesión",
+        "username": "Correo electrónico",
+        "password": "Contraseña",
+        "cancelBtn": "Cancelar",
+        "forgotPassword":"Olvidé mi contraseña",
+        "emptyUser": "Por favor ingrese su correo electrónico",
+        "emptyPass": "Por favor ingrese su contraseña",
+        "startLogin": "Iniciando sesión...",
+        "wrongUserPass": "Email o contraseña incorrectos"
+    }
+}

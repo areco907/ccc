@@ -19,10 +19,8 @@ page-login {
     }
 
     .logo{
-        display: flex;
-        width: 100%;
-        justify-content: center;
         margin-top: 20%;
+        text-align: center;
 
         img{
             width:60%;
@@ -39,23 +37,25 @@ page-login {
         width: 100%;
 
         .btn-main-button {
-            height: 50px;
+            height: 35px;
+            width: 40%;
             margin: 0 auto;
             text-transform: none;
             font-family: $font-ptSerif;
             font-weight: normal;
-            font-size: $font-size-subtitle;
+            font-size: $font-size-button;
             border-radius: 64px;
             box-shadow: none;
             background: color($colors, ccc_white);
+            color: color($colors, ccc_light_gray);
         }
 
         p{
             font-family: $font-ptSerif;
             font-weight: normal;
-            font-size: $font-size-subtitle;
+            font-size: $font-size-button;
             color: color($colors, ccc_white);
-            margin: 30px auto;  
+            margin: 20px auto 25px;  
         }
         
     }

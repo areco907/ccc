@@ -45,6 +45,7 @@ $colors: (
   ccc_vinotinto: #56272D,
   ccc_abano: #E5E0DA,
   ccc_dark_gray: #333333,
+  ccc_light_gray: #9A9A9A,
   ccc_cafe: #56272D
 );
 
@@ -53,12 +54,15 @@ $colors: (
 
 $font-size-title: 2.2rem;
 $font-size-subtitle: 1.8rem;
+$font-size-button: 1.4rem;
 $font-size-text: 1.4rem;
+$font-size-footer: 1.2rem;
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
-
+$loading-ios-spinner-ios-color: white;
+$loading-md-spinner-ios-color: white;
 
 
 

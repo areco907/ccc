@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { HttpModule } from '@angular/http';
+import { AppVersion } from '@ionic-native/app-version';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -10,7 +11,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
  * Modules
  */
 import { LoginPageModule } from '../pages/login/login.module';
-
+import { StartLoginPageModule } from "../pages/start-login/start-login.module";
+import { ForgotPasswordPageModule } from "../pages/forgot-password/forgot-password.module";
+import { HorseDetailPageModule } from "../pages/horse-detail/horse-detail.module";
 /**
  * Components
  */
@@ -28,6 +31,7 @@ import { UtilitiesProvider } from '../commons/providers/utilities.provider';
 import { JsonProvider } from '../commons/providers/json.provider';
 import { SessionProvider } from '../commons/providers/session.provider';
 import { HomeServiceProvider } from '../providers/home-service/home-service';
+import { LoginServiceProvider } from '../providers/login-service/login-service';
 
 
 @NgModule({
@@ -40,6 +44,9 @@ import { HomeServiceProvider } from '../providers/home-service/home-service';
     ModalsPageModule,
     HomePageModule,
     ComponentsModule,
+    ForgotPasswordPageModule,
+    HorseDetailPageModule,
+    StartLoginPageModule,
     IonicModule.forRoot(MyApp),
     HttpModule
   ],
@@ -50,12 +57,14 @@ import { HomeServiceProvider } from '../providers/home-service/home-service';
   providers: [
     StatusBar,
     SplashScreen,
+    AppVersion,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     AdapterManagerService,
     UtilitiesProvider,
     JsonProvider,
     SessionProvider,
-    HomeServiceProvider
+    HomeServiceProvider,
+    LoginServiceProvider
   ]
 })
 export class AppModule {}

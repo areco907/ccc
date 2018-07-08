@@ -33,9 +33,11 @@ export class UtilitiesProvider {
   public showLoading(customMessage?: string): void {
     let message = customMessage? customMessage: this.jsonProvider.messages.loading;
     this.loading = this.loadingCtrl.create({
-      content: message
+      spinner: 'ios',
+      content: message,
     });
     this.loading.present();
+
   }
 
   /**
@@ -56,7 +58,8 @@ export class UtilitiesProvider {
     if(this.modal) {
       this.modal.dismiss();
     }
-    this.modal = this.modalController.create(ModalsPage, { data: data });    
+    this.modal = this.modalController.create(ModalsPage, { data: data });
+    console.log(data);    
     this.modal.present();
   }
 

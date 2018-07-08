@@ -1,17 +1,31 @@
 page-modals {
-  .iconCircle {
-    background-color: color($colors, custom_color);
-    border-radius: 100%;
-    width: 30px;
-    height: 30px;
-    padding: 0.4em 0.65em;    
-    position: absolute;
-    right: 10px;
-    top: 10px;
 
-    ion-icon {
-      color: #fff;
-      font-size: 1.5em;
+  ion-content{
+    background-color: color($colors, ccc_vinotinto) !important;
+    opacity: 0.9;
+
+    .scroll-content{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.content-container{
+			flex-direction: column;
+			color: white;
+			font-family: $font-roboto;
+			text-align: center;
+
+			.btn-modal{
+				background-color: transparent;
+				border: 1px solid color($colors, ccc_white);
+				border-radius: 25px;
+				font-family: $font-ptSerif;
+				text-transform: none !important;
+				min-width: 50%;
+				margin-top: 30px;
+			}
+		}
     }
   }
+  
 }

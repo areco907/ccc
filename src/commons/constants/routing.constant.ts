@@ -8,14 +8,22 @@ export class adaptersRouting {
   /**
    * Rutas de los adaptadores
    */
-  public static adapters = {
-    detailsAdapter: 'CommonsAdapter/'
+  public static services = {
+    webService: 'http://www.basculasjaramillo.com/ccc/WS/'
   };
 
   /**
-   * Rutas de los procedimientos {detailsAdapter}
+   * Rutas de los home services {homeServices}
    */
-  public static detailsAdapter = {
-    banner: adaptersRouting.adapters.detailsAdapter + 'commons/get-banner-images'
+  public static homeService = {
+    caballosHome: adaptersRouting.services.webService + 'caballos'
+  };
+
+  /**
+   * Rutas de los login services {loginServices}
+   */
+  public static loginService = {
+    login: adaptersRouting.services.webService + 'usuarios/login',
+    recuperar_contrasena: adaptersRouting.services.webService + 'usuarios/recuperar-contrasena'
   };
 }

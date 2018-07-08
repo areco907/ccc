@@ -1,0 +1,21 @@
+<ion-header>
+
+	<ion-navbar>
+		<ion-title>{{horseDetail.nombre}}</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<div>
+		<ion-slides>
+			<ion-slide pager>
+				<div class="imageHorse" [ngStyle]="{'background': '#fff url(' + messages.imgPath + horseDetail.foto + ') no-repeat 0 0'} " ></div>
+			</ion-slide>
+			<ion-slide *ngFor="let horseMedia of horseDetail.medios">
+				<div class="imageHorse" [ngStyle]="{'background': '#fff url(' + messages.imgPath + horseMedia.ruta + ') no-repeat 0 0'} " ></div>
+			</ion-slide>
+		</ion-slides>
+	</div>
+</ion-content>

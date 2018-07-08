@@ -1,15 +1,10 @@
-<ion-header>
-    <ion-navbar>
-      <ion-title>{{data.title || messages.title}}</ion-title>
-    </ion-navbar>
-  </ion-header>
 <ion-content padding>
-  <p>{{data.text}}</p>
-  <button 
-    ion-button 
-    class="btn-modal" 
-    (click)="buttonMainModalFunction()" 
-    id="modalBtn">
-    {{data.btnPrincipalText || messages.btnPrincipalText}}
-  </button>
+  <div class="content-container">
+      <p>{{data}}</p>
+      <button 
+        ion-button class="btn-modal" (click)="buttonMainModalFunction()">
+        {{messages.btnPrincipalText}}
+      </button>
+  </div>
+  
 </ion-content>

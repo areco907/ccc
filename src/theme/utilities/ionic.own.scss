@@ -15,11 +15,26 @@ ion-header {
 	
 }
 
-.button{
-	&-md,
-	&-ios{
-		color: color($colors, ccc_dark_gray) !important;
+ion-loading{
+	ion-backdrop{
+		background-color: color($colors, ccc_vinotinto) !important;
+		opacity: 0.9 !important;
 	}
+}
+
+.loading-md .loading-wrapper{
+	display: flex;
+	flex-direction: column-reverse;
+	box-shadow: none !important;
+	background-color: transparent !important;
+	color: white;
+	font-family: $font-roboto;
+}
+
+.loading-md .loading-spinner + .loading-content{
+	color: color($colors, ccc_white);
+	margin-left: 0;
+	margin-bottom: 20px;
 }
 
 .menu-inner{

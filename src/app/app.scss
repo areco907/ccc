@@ -61,12 +61,20 @@ ion-content{
         }
     }
     .footer-logout{
-        border-top:1px solid color($colors, ccc_dark_gray);
+        border-top:1px solid color($colors, ccc_light_gray);
         position:absolute;
         bottom: 0;
-        padding: 20px 0 0 20px;
+        font-size: $font-size-footer;
+        padding: 10px 0 0 20px;
         margin-left: -15px;
         width: 100%;
+        .logout{
+            font-family: $font-ptSerif;
+        }
+        .version{
+            color: color($colors, ccc_light_gray);
+            font-style: italic;
+        }
     }
 
 }
